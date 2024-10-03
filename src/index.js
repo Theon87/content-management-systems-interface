@@ -1,8 +1,14 @@
 // DEPENDENCIES
 import inquirer from "inquirer";
 
-
 // DATA
+
+
+// FUNCTIONS
+
+
+// USER INTERACTIONS
+
 inquirer
   .prompt([
     {
@@ -24,8 +30,6 @@ inquirer
     } else if (response.purpose === "View all employees") {
         console.log("a formatted table showing employee data")
     }
-
-
     // WHEN I choose to view all roles
     // THEN I am presented with the job title, role id, the department that role belongs to, and the salary for that role
 
@@ -53,12 +57,14 @@ inquirer
 
     // fs.appendFile('log.txt', response.moc, (err) => 
     //     err ? console.error(err) : console.log("Method of Communication logged!"));
-    });
+    
+  })
+  .catch (err => {
+    console.log(err)
+  });
 
-// FUNCTIONS
 
 
-// USER INTERACTIONS
 
 
 // INITIALIZATIONS
