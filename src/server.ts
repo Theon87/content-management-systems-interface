@@ -1,7 +1,6 @@
 // DEPENDENCIES
 import express from 'express';
 
-
 // INTERFACES
 
 // DATA
