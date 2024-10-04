@@ -1,17 +1,21 @@
 // DEPENDENCIES
 import express from 'express';
+import { QueryResult } from 'pg';
 
 // INTERFACES
 
 // DATA
+import { pool, connectToDb } from './connections.js';
+await connectToDb();
+
+// APP/PORTS
 const PORT = process.env.PORT || 3001;
 const app = express();
 
-// APP/PORTS
+// MIDDLEWARE
+// Express middleware
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-
-// MIDDLEWARE
 
 // ROUTES
 
