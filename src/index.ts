@@ -1,5 +1,9 @@
 // DEPENDENCIES
 import inquirer from "inquirer";
+import { QueryResult } from 'pg';
+
+import { pool, connectToDb } from './connections.js';
+await connectToDb();
 
 // DATA
 
@@ -24,12 +28,24 @@ inquirer
     // WHEN I choose to view all departments
     // THEN I am presented with a formatted table showing department names and department ids
     if (response.purpose === "View all departments") {
-        console.log("a table of formatted ids here")
-    } else if (response.purpose === "View all roles") {
-        console.log("job title, role id, the department that role belongs to, and the salary for that role.")
-    } else if (response.purpose === "View all employees") {
-        console.log("a formatted table showing employee data")
+        console.log("a table of department names here")
+        pool.query("SELECT * FROM department;", (err: Error, result: QueryResult) => {
+          if(err){
+              console.log(err);
+          }
+          console.log(result.rows);
+      })  
     }
+  })    
+  .catch (err => {
+    console.log(err)
+  });
+
+// } else if (response.purpose === "View all roles") {
+    //     console.log("job title, role id, the department that role belongs to, and the salary for that role.")
+    // } else if (response.purpose === "View all employees") {
+    //     console.log("a formatted table showing employee data")
+    // }
     // WHEN I choose to view all roles
     // THEN I am presented with the job title, role id, the department that role belongs to, and the salary for that role
 
@@ -47,22 +63,6 @@ inquirer
 
     // WHEN I choose to update an employee role
     // THEN I am prompted to select an employee to update and their new role and this information is updated in the database
-
-
-    // fs.writeFile('log.txt', response.yourName, (err) => 
-    //     err ? console.error(err) : console.log("Name logged!"));
-
-    // fs.appendFile('log.txt', response.language, (err) => 
-    //     err ? console.error(err) : console.log("Language logged!"));
-
-    // fs.appendFile('log.txt', response.moc, (err) => 
-    //     err ? console.error(err) : console.log("Method of Communication logged!"));
-    
-  })
-  .catch (err => {
-    console.log(err)
-  });
-
 
 
 
