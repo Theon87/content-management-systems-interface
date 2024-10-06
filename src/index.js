@@ -222,3 +222,4 @@ inquirer
   });
     
 // INITIALIZATIONS
+// run in terminal: enter "node index" to start the app
