@@ -208,7 +208,34 @@ inquirer
   } else if (response.purpose === "Update an employee role") {
       // WHEN I choose to update an employee role
       // THEN I am prompted to select an employee to update and their new role and this information is updated in the database
+      // This works!
       console.log("prompt to select an employee to update and their new role and this information is updated in the database")
+      inquirer
+        .prompt(
+        [
+            {
+              type: 'input',
+              message: 'Enter the employee id to update', // enter as a number
+              name: 'employeeToUpdate'
+            },
+            {
+              type: 'input',
+              message: 'Enter the new role id', // enter as a number
+              name: 'newRoleID'
+            },
+        ])
+        .then((response) => {
+          pool.query(`UPDATE employee SET role_id = $1 WHERE id = $2`, [response.newRoleID, response.employeeToUpdate], (err, _result) => {
+            if(err){
+                console.log(err);
+            } else {
+            console.log(viewEmployees());
+            }  
+            });
+        })
+        .catch(
+          err => console.log(err)
+        );
       // updateEmployeeRole();
   } else if (response.purpose === "View employees by department") {
       // WHEN I choose to view employees by department
