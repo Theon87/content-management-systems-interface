@@ -24,11 +24,11 @@ inquirer
     }
   ])
   .then((response) => {
-    // WHEN I choose to view all departments
-    // THEN I am presented with a formatted table showing department names and department ids
-    // This works!
-    if (response.purpose === "View all departments") {
-      viewDepartments();
+      // WHEN I choose to view all departments
+      // THEN I am presented with a formatted table showing department names and department ids
+      // This works!
+      if (response.purpose === "View all departments") {
+        viewDepartments();
   } else if (response.purpose === "View all roles") {
       // WHEN I choose to view all roles
       // THEN I am presented with the job title, role id, the department that role belongs to, and the salary for that role
@@ -60,48 +60,55 @@ inquirer
       // This works!
       updateEmployeeRole();
   } else if (response.purpose === "Update employee manager") {
+      // BONUS
       // WHEN I choose to update an employee manager
       // THEN I am prompted to select an employee to update and their new manager and this information is updated in the database
       // This works!
       updateEmployeeManager(); 
   } else if (response.purpose === "View employees by manager") {
+      // BONUS
       // WHEN I choose to view employees by manager
       // THEN I am presented with a formatted table showing employee data, including manager names
       // This works!
       viewEmployeesByManager();
   } else if (response.purpose === "View employees by department") {
+      // BONUS
       // WHEN I choose to view employees by department
       // THEN I am presented with a formatted table showing employee data, including department names
       // This works!      
       viewEmployeesByDepartment();
   } else if (response.purpose === "Delete department") {
-    // WHEN I choose to delete a department
-    // THEN the department is deleted from the database
-    // This works!
-    if (response.purpose === "Delete department") {
-      deleteDepartment();
-    }
+      // BONUS
+      // WHEN I choose to delete a department
+      // THEN the department is deleted from the database
+      // This works!
+      if (response.purpose === "Delete department") {
+        deleteDepartment();
+      }
   } else if (response.purpose === "Delete role") {
-    // WHEN I choose to delete a role
-    // THEN the role is deleted from the database
-    // This works!
-    if (response.purpose === "Delete role") {
-      deleteRole();
-    }
+      // BONUS
+      // WHEN I choose to delete a role
+      // THEN the role is deleted from the database
+      // This works!
+      if (response.purpose === "Delete role") {
+        deleteRole();
+      }
   } else if (response.purpose === "Delete employee") {
-    // WHEN I choose to delete an employee
-    // THEN the employee is deleted from the database
-    // This works!
-    if (response.purpose === "Delete employee") {
-      deleteEmployee();
-    }
+      // BONUS
+      // WHEN I choose to delete an employee
+      // THEN the employee is deleted from the database
+      // This works!
+      if (response.purpose === "Delete employee") {
+        deleteEmployee();
+      }
   } else if (response.purpose === "View combined salary of employees by department") {
-    // WHEN I choose to view the combined salary of employees by department
-    // THEN I am presented with a formatted table showing department names and combined salaries
-    // This works!
-    if (response.purpose === "View combined salary of employees by department") {
-      viewCombinedSalaryByDepartment();
-    }
+      // BONUS
+      // WHEN I choose to view the combined salary of employees by department
+      // THEN I am presented with a formatted table showing department names and combined salaries
+      // This works!
+      if (response.purpose === "View combined salary of employees by department") {
+        viewCombinedSalaryByDepartment();
+      }
   } else if (response.purpose === "Quit") {
       // WHEN I choose to quit the application
       // THEN I am presented with the option to exit the application
