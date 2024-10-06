@@ -53,9 +53,8 @@ Demo
 
 You can use the app to do the following;
 
-```md
 ![Initial Prompt Options](assets/images/first_prompts.png)
-```
+
 - View all departments
 
 
