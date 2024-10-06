@@ -48,6 +48,9 @@ The npm Inquirer.js README.md document was used for guidance on this project: [h
 
 ## Features
 
+Demo
+[https://drive.google.com/file/d/1f7u6Cgv5fyaCGv7_BcwBgZ6ORWwiSi4Z/view?usp=sharing]
+
 You can use the app to do the following;
 
 ![Initial Prompt Options](assets/images/first_prompts.png)
