@@ -20,7 +20,7 @@
 -- JOIN department ON role.department_id = department.id
 -- ORDER BY employee.id;
 
--- View employees by manager (Ready!).
+-- -- View employees by manager (Ready!).
 -- SELECT employee.first_name AS manager_first_name, employee.last_name AS manager_last_name, m.first_name AS employee_first_name, m.last_name AS employee_last_name
 -- FROM employee
 -- JOIN role ON employee.role_id = role.id
@@ -36,7 +36,7 @@
 -- ORDER BY combined_salary DESC;
 
 -- -- Add departments
-INSERT INTO department (name) VALUES ($1);
+-- INSERT INTO department (name) VALUES ($1);
 
 -- Update employee managers.
 -- UPDATE employee
