@@ -50,15 +50,13 @@ The npm Inquirer.js README.md document was used for guidance on this project: [h
 
 You can use the app to do the following;
 
-```md
 ![Initial Prompt Options](assets/images/first_prompts.png)
-```
 
 - View all departments
 
-```md
+
 ![View Departments](assets/images/first_prompts.png)
-```
+
 
 - View all roles
 - View all employees
@@ -70,15 +68,15 @@ You can use the app to do the following;
 - View employees by manager
 - View employees by department
 
-```md
+
 ![View Employees by Department](assets/images/view_employees_by_department.png)
-```
+
 
 - Delete department
 
-```md
+
 ![Delete Departments](assets/images/delete_departments.png)
-```
+
 
 - Delete role
 - Delete employee
