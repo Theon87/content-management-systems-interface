@@ -33,7 +33,7 @@ Follow these steps to use the app:
 1) Open the app using VS Code.
 2) Ensure that you install the dependencies named in the installation instructions above.
 3) Open a new terminal in the directory containing index.js.
-4) Enter the command "node index".
+4) Enter the command "npm run start".
 5) Follow the prompts (see - [Features](#features) below) to interact with the app.
 
 ## Credits
