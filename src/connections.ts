@@ -5,10 +5,10 @@ import pg from 'pg';
 const { Pool } = pg;
 
 const pool = new Pool({
-    user: process.env.DB_USER || 'postgres',
-    password: process.env.DB_PASSWORD || 'root',
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
     host: 'localhost',
-    database: process.env.DB_NAME || 'employee_manager_db',
+    database: process.env.DB_NAME,
     port: 5432,
   });
 
