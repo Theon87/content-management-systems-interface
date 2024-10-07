@@ -53,12 +53,12 @@ Demo
 
 You can use the app to do the following;
 
-![Initial Prompt Options](assets/images/first_prompts.png)
+![Initial Prompt Options](./assets/images/first_prompts.png)
 
 - View all departments
 
 
-![View Departments](assets/images/first_prompts.png)
+![View Departments](./assets/images/first_prompts.png)
 
 
 - View all roles
@@ -72,13 +72,13 @@ You can use the app to do the following;
 - View employees by department
 
 
-![View Employees by Department](assets/images/view_employees_by_department.png)
+![View Employees by Department](./assets/images/view_employees_by_department.png)
 
 
 - Delete department
 
 
-![Delete Departments](assets/images/delete_departments.png)
+![Delete Departments](./assets/images/delete_departments.png)
 
 
 - Delete role
